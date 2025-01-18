@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*  font-family: "Poppins", serif; */
+/* font-family: "Inter", serif; */
+
+:root {
+    --body-color: rgba(170, 170, 170, 1);
+    /* font related varriable */
+   --primary-font: 600 1rem  "Poppins", serif;
+   --secondary-font: 700 3.25rem/4.38rem "Poppins", serif;
+   --subtitle-font: 600 1.75rem/4.38rem "Poppins", serif;
+   --grid-font: 500 1.75rem/2.50rem "Poppins", serif;
+   --price-font: 400 1.50rem/1.5rem "Inter", serif;
+   --price-desc-font: 700 0.88rem/1.43rem "Inter", serif;
+   --feature-font: 700 2.38rem/3.75rem "Poppins", serif;
+   --feature-desc-font: 700 1rem/1.75rem "Poppins", serif;
+   --btn-font: 700 1rem  "Poppins", serif;
+
+    /* background-color related varriable */
+    --grid-title-color: rgba(24, 25, 31, 1);
+    --bg-pink-color: rgba(224, 44, 109, 1);
+    --bg-footer-color: rgba(10, 8, 38, 1);
+   /* color related varriable */
+   --primary-color: rgba(58, 58, 58, 1);
+   --secondary-color-btn: rgba(255, 255, 255, 1);
+   --price-color: rgba(0, 0, 0, 1);
+   --price-desc-color: rgba(120, 120, 133, 1);
+   --pink-color: rgba(224, 44, 109, 1);
+   --feature-color: rgba(10, 8, 38, 1);
+   --feature-desc-color: rgba(108, 108, 108, 1);
+   --copyrights-color: rgba(217, 219, 225, 1);
+   --shadow-color: rgba(0, 0, 0, 0.15);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* ===== header area design start ======= */
+
+#header-area {
+    padding-bottom: 70px; 
+}
+/* nav-bar design start */
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.hum-bar i, .cart i {
+    font-size: 1.80rem;
+    color: var(--primary-color);
+}
+
+.hum-bar {
+    display: none;
+}
+.logo img {
+    filter: contrast(2);
+}
+.py-t-87 {
+    padding-top: 5.44rem;
+    padding-bottom: 3.13rem;
+}
+.menu {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav-menu{
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu > li {
+    list-style: none;
+}
+
+.nav-menu {
+    gap: 2.13rem;
+}
+
+.nav-menu > li > a {
+    text-decoration: none;
+    font: var(--primary-font);
+    color: var(--primary-color);
+}
+
+/* === nav-bar design End ====== */
+
+/* ==== banner part design start */
+.banner-container {
+    align-items: center;
+    gap: 2.90rem;
+}
+
+.banner-text-content {
+    width: 36.38rem;
+    height: 16.88rem;
+    
+}
+.banner-title {
+    font: var(--secondary-font);
+    color: var(--primary-color);
+}
+.banner-description {
+    font: var(--primary-font);
+    color: var(--primary-color);
+    margin: 16px 0;
+}
+
+.banner-btn  {
+    font: var(--btn-font);
+    color: var(--secondary-color-btn);
+    background-color: var(--bg-pink-color);
+    border: 0;
+    border-radius: 41px;
+    padding: 10px 24px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    transform: translatex(20px);
+}
+
+.banner-img-content {
+    width: 29.69rem;
+    height: 29.69rem;
+    background: url(images/Circle\ design.svg);
+}
+
+.banner-img-content img {
+    width: 27.50rem;
+    height: 25.88rem;
+}
+
+/* ========== Banner part design end =================== */
+
+
+/* ========== Companies part design start =================== */
+#companies {
+    margin-bottom: 100px;
+}
+.companies-content-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px -2px 2px rgba(0, 0, 0, 0.25);
+    padding: 36px 61px;
+    gap: 3.75rem;
+    background: linear-gradient(rgba(192, 204, 218, 0.1) rgba(192, 204, 218, 0.6) rgba(192, 204, 218, 1));
+}
+
+/* ======== Collectiion part design start ========= */
+#collection {
+    margin-bottom: 50px;
+}
+.shopping-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.88rem;
+    margin-top: 30px;
+    padding: 0 32px;
+}
+.align-center {
+    text-align: center;
+}
+
+.text-trans {
+    text-transform: capitalize;
+}
+
+.sub-title-content {
+    font: var(--subtitle-font);
+    color: var(--primary-color);
+}
+.shop-card {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* .shop-img {
+    width: 300px;
+} */
+
+.shop-img img {
+    width: 100%;
+}
+.card-title {
+    font: var(--grid-font);
+    color: var(--grid-title-color);
+}
+.card-price {
+    font: var(--price-font);
+    color: var(--price-color);
+    margin: 10px 0;
+}
+
+.rating-icon {
+    gap: 20px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.star-icon i {
+    color: rgba(255, 149, 0, 1);
+}
+
+.card-description {
+    font: var(--price-desc-font);
+    color: var(--price-desc-color);
+}
+
+.shop-btn {
+    text-align: right;
+    padding: 0 32px;
+    margin-top: 50px;
+}
+.collection-btn {
+    font: var(--btn-font);
+    color: var(--pink-color);
+    text-decoration: none;
+}
+
+
+/* ===== feature part start ====== */
+#feature {
+    margin-bottom: 100px;
+}
+.feature-btn {
+    font: var(--btn-font);
+    background: var(--bg-pink-color);
+    color: var(--secondary-color-btn);
+    padding: 10px 25px;
+    border: none;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.feature-btn:hover {
+    transform: scale(1.2);
+}
+
+.feature-container {
+    gap: 4rem;
+    align-items: center;
+}
+
+.feature-title {
+    font: var(--feature-font);
+    color: var(--feature-color);
+}
+
+.feature-description {
+    font: var(--feature-desc-font);
+    color: var(--feature-desc-color);
+    margin: 16px 0;
+}
+
+/* footer area design start */
+
+#footer-area {
+    background-color: var(--bg-footer-color);
+
+}
+
+.footer-container {
+    width: 16.38rem;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    filter: contrast(2);
+}
+
+.footer-copyrights {
+    color: var(--price-desc-font);
+    color: rgba(217, 219, 225, 1);
+    margin: 16px 0;
+}
+
+.footer-icon i {
+    color: rgba(217, 219, 225, 1);
+    font-size: 1.70rem;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/* Responsive-design for mobile view */
+
+@media screen and (max-width: 576px) {
+    .nav-bar  {
+        padding: 50px 20px;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    .hum-bar {
+        display: block;
+    }
+    /* === banner part ======== */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-content {
+        text-align: center;
+        width: 100%;
+    }
+    .banner-img-content {
+        width: 100%;
+    }
+    .banner-img-content img {
+        width: 100%;
+    }
+    /* companies part */
+    #companies {
+        margin-top: 100px;
+    }
+    .companies-content-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+    }
+    /* collection part */
+    .shopping-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* feature part */
+
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+    .feature-text-content {
+        text-align: center;
+    }
+    .feature-img-content img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .menu {
+      margin-top: 30px;
+    }
+    /* === banner part ======== */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-content {
+        text-align: center;
+    }
+
+    /* companies part */
+    .companies-content-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 20px;
+    }
+    /* collection part */
+    .shopping-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     /* feature part */
+
+     .feature-container {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+    .feature-text-content {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+/* === banner part ======== */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-content {
+        text-align: center;
+    }
+
+    /* companies part */
+    .companies-content-container {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 20px;
+    }
+
+    /* collection part */
+    .shopping-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     /* feature part */
+
+     .feature-container {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+    .feature-text-content {
+        text-align: center;
+    }
+
+    
+}
+
